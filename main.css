@@ -30,6 +30,10 @@ img {
     text-decoration: none;
 }
 
+.headerButton:hover {
+    color: black;
+}
+
 .mainButton {
     text-decoration: none;
     align-items: baseline;
@@ -70,4 +74,34 @@ img {
 
 .iconButton:hover{
     color: bisque;
+}
+
+.wideButton{
+    background-color:rgb(32, 148, 123);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border:20px;
+    border-style: double;
+    border-color: rgb(32, 148, 123);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    svg {
+        position:absolute;
+    }
+}
+
+.buttonSVGLeft{
+    top:0;
+    left: 0;
+    width: 20;
+    height: 20;
+    z-index: 10;
+    vertical-align: top;
+}
+
+.wideButton:hover{
+    border-color: aliceblue;
 }

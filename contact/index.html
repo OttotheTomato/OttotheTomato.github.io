@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head>
+<html>
+    <head>
         <title>
             Otto Perry | UX/Narrative Designer
         </title>
@@ -7,31 +8,25 @@
         <meta charset="utf-8"/>
         <meta property="og:title" content="Otto Perry | UX/Narrative Designer"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://ottop.me/contact" />
+        <meta property="og:url" content="https://ottop.me" />
         <script src="https://kit.fontawesome.com/cad1fde959.js" crossorigin="anonymous"></script>
         <meta property="description" content="UX/Narrative Game Designer currently studying at DigiPen Institute of Technology."/>
+        <script
+			  src="https://code.jquery.com/jquery-4.0.0.min.js"
+			  integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+			  crossorigin="anonymous"></script>
+        <script>
+$(function(){
+    $('#header').load('/header.html')
+});
+        </script>
     </head>
-        <body class="wrapper">
- <div class="header">
-            <a href="." class="mainButton">
-                    <h1>Otto Perry</h1>
-                    <h1>|</h1>
-                    <span>UX/Narrative Designer</span>
-            </a>
-            <li>
-                <p><a class="headerButton" href="about/">About</a></p>
-            </li>
-            <li>
-                <p><a class="headerButton" href="projects/">Projects</a></p>
-            </li>
-            <li>
-                <p><a class="headerButton" href="contact/">Contact</a></p>
-            </li>
-        </div>
+    <body>
         <div class="contentWrapper">
             Send me an email at <a href="mailto:contact@ottop.me">contact@ottop.me</a>!
         <div>
             Or send me a message on LinkedIn!
         </div>
         </div>
-        </body>
+    </body>
+</html>
