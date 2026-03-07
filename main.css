@@ -50,6 +50,12 @@ img {
     transition: color 0.3s ease;
 }
 
+.construction {
+    img {
+        width: auto;
+    }
+}
+
 .mainButton:hover{
     background-image: url(/AltLogo.svg);
 }
