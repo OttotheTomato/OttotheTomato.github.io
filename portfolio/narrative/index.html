@@ -31,7 +31,11 @@ $(function(){
             <h1>
                 In Love's Meaty Claws
             </h1>
-            <img src="/assets/LovesMeatyClaws/CrabCrab.jpg">
+            <picture>
+                <source media="(width > 800)" srcset="/assets/LovesMeatyClaws/CrabCrabBig.jpg"/>
+                <source media="(width < 800)" srcset="/assets/LovesMeatyClaws/CrabCrabSmall.jpg"/>
+                <img src="/assets/LovesMeatyClaws/CrabCrabBig.jpg" alt="A picture of a red crab on a beach."/>
+            </picture>
             <p>
                 A series of written works for a game concept about a man named Samuel meeting and falling in love with a half-crab, half-man, hybrid named Chris.
             </p>
@@ -44,7 +48,6 @@ $(function(){
                 Creek Whatchaknow
             </h1>
             <img src="/assets/CreekWhatchaKnow/creekwhatchaknow.png">
-            Photo by <a href="https://unsplash.com/@scottrodgerson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Rodgerson</a> on <a href="https://unsplash.com/photos/black-and-white-tunnel-with-light-IiKS5cbg5_g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             <p>
                 A short film screenplay about bank robbers Richard and Kevin reconvening in their sewer hideout after a heist gone wrong. 
             </p>
