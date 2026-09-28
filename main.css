@@ -63,7 +63,20 @@ img {
 }
 
 .sideBySideShowcase {
-    display: inline-block;
+    display: flex;
+    gap: 15px;
+
+    img {
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    video {
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+    }
 }
 
 .headerButton {
