@@ -56,7 +56,67 @@ img {
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+
+    picture {
+        max-width: 0.2em;
+        height: auto;
+        width: auto;
+    }
 }
+
+.quoteBlock {
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+}
+
+.caladea-regular {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.caladea-bold {
+    font-family: "Caladea", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.caladea-regular-italic {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.caladea-bold-italic {
+    font-family: "Caladea", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
 
 .buttonSection {
     flex: 1;
