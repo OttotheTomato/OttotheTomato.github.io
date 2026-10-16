@@ -28,8 +28,82 @@
             $('#construction').load('/construction.html')
         });
     </script>
+</head>
 
 <body>
     <header id="header" class="header"></header>
+    <h1>Clean Freak</h1>
+    <p>Clean Freak is a Twine project made for my Narrative Design class.
+        It started life as a short story treatment that I then developed into a Twine prototype.
+    </p>
+    <p>
+        The main purpose of this prototype was to demonstrate I could implement a affinity system.
+    </p>
+    <img src="/assets/CleanFreak/originalfreakstructure.png" style="display:block; width: 70%; margin: auto;"
+        alt="An image of a series of nodes within the Twine program.">
+    <p>The two non-player characters, Andy and Gerald, each have an Empathy value and a Respect value.</p>
+    <p>By empathizing with a character, such as defending them in an argument, the player gains an Empathy point with
+        that character.
+        If the player gains a character's respect, such as following their plan, they gain a Respect point with that
+        character.
+    </p>
+    <p>
+        By splitting affinity to multiple values, it allows for more nuance for character dialogue.
+        A character may empathize with the player character but not respect their decisions and vice versa.
+    </p>
+    <img src="/assets/CleanFreak/finalfreakstructure.png" style="display:block; width: 70%; margin: auto;"
+        alt="An image of a series of nodes within the Twine program, less than the previous image.">
+    <p>The prototype story structure was overly complicated and overscoped because I believed that it was supposed to
+        encompass the entire story. For the final submission, I simplified the routes to have four endings, two for each
+        NPC depending on their empathy and respect.</p>
+    <h1>Problem</h1>
+    <p>The final submission was rough for multiple reasons.</p>
+    <ul>
+        <li>
+            <h2>Grammatical mistakes.</h2>
+        </li>
+        <p>There was plentiful grammatical mistakes due to a rushed editing process and lack of
+            autocorrect tools in Twine.
+        </p>
+        <li>
+            <h2>Lack of clear character development.</h2>
+        </li>
+        <p>In the feedback I recieved, it was noted that there was no clear character development for any of the
+            characters.</p>
+        <li>
+            <h2>Lack of clear influence on the events of the story.</h2>
+        </li>
+        <p>From the feedback, "although I can see the immediate consequences of my choices, I don't have a very strong
+            sense of how I'm impacting the story overall."</p>
+        <p>The system is clear in its effect, but the story does not reflect this effect.</p>
+        <p>As mentioned in the feedback, "the last passages are structured well and have good variable checks, but the
+            options presented didn't give me a strong sense that the action which plays out was based on my earlier
+            choices."</p>
+    </ul>
+    <h1>Solution</h1>
+    <p>If I wanted to use this project as a portfolio piece, I needed to revise it.</p>
+    <p>To revise it I had to implement:</p>
+    <ul>
+        <li>
+            <h2>An editing pass.</h2>
+        </li>
+        <p>I was especially careful to check the grammar and punctuation to make sure the writing was polished.</p>
+        <li>
+            <h2>Further characterization through dialogue and action.</h2>
+        </li>
+        <p>Instead of describing actions in a way that could apply to any character, I edited and added sections to the
+            text that reflect a character's traits.</p>
+        <p>The same goes for dialogue, of which I wanted to bring out Andy and Gerald's specific voices.</p>
+        <li>
+            <h2>More ripples that demonstrate the player's effect on the characters.</h2>
+        </li>
+        <p>In the original submission the effect of the player's choices were only seen near the end of the game. In my
+            revisions I focused on making sure that every scene after the first choice would be influenced by the
+            player's actions. It was also important that said changes be more than just a single swapped line of
+            dialogue or two, as that isn't enough to illustrate how the player has effected the characters.</p>
+    </ul>
+    <h1>Result</h1>
+    <p>To demonstrate that my revisions had improved the elements that were lacking in the original submission I
+        conducted playtesting.</p>
     <div id="construction" class="construction"></div>
 </body>
