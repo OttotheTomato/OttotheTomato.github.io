@@ -31,6 +31,15 @@ img {
     border-color: black;
     border-style: solid;
     position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.rowContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .projectSlideContainer {
