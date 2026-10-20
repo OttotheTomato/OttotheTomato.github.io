@@ -7,9 +7,30 @@
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 img {
     width: 100%;
     height: auto;
+}
+
+.verticalShowcaseContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.verticalShowcase {
+    width: 25%;
 }
 
 .header {
@@ -46,7 +67,8 @@ img {
     width: 100%;
 
     ol,
-    ul {
+    ul,
+    a {
         width: 100%;
         display: block;
         box-sizing: border-box;
@@ -57,7 +79,6 @@ img {
 }
 
 .projectSlide {
-    display: flexbox;
     border: 5px;
     border-style: solid;
     padding-bottom: 10px;
@@ -71,6 +92,17 @@ img {
         height: auto;
         width: auto;
     }
+
+    text-decoration: none;
+    color: black;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.projectSlide:hover {
+    color: grey;
 }
 
 .quoteBlock {
