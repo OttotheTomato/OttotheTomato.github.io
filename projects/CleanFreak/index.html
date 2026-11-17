@@ -111,5 +111,31 @@
                 player's actions. It was also important that said changes be more than just a single swapped line of
                 dialogue or two, as that isn't enough to illustrate how the player has effected the characters.</p>
         </ul>
+        <div class="clearfix"></div>
+        <div id="myModal" class="modal">
+            <span class="close">x</span>
+            <img class="modal-content" id="img01">
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            var images = document.getElementsByTagName('img');
+
+            var modalImg = document.getElementById("img01")
+            var i;
+            for (i = 0; i < images.length; i++) {
+                images[i].onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    modalImg.alt = this.alt;
+                }
+            }
+        </script>
     </div>
 </body>
