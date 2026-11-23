@@ -301,6 +301,8 @@ img {
     background-image: url(/assets/buttons/top_left.svg), url(/assets/buttons/top_right.svg), url(/assets/buttons/bottom_left.svg);
     background-repeat: no-repeat;
     background-position: top left, top right, bottom left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .linkButton:hover {
