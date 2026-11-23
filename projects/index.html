@@ -150,7 +150,7 @@
                     half-crab, half-man, hybrid named Chris.
                 </p>
             </a>
-            <a class="projectSlide" href="/projects/CreekWhatchaknow/CreekWatchaknow.pdf">
+            <div class="pdfSlide">
                 <h1>
                     Creek Whatchaknow
                 </h1>
@@ -190,8 +190,8 @@
                     heist gone wrong.
                 </p>
                 <p>Richard has to weigh his friendship, his freedom, and his feelings for Kevin.</p>
-            </a>
-            <a class="projectSlide" href="/projects/Demake.pdf">
+            </div>
+            <div class="pdfSlide">
                 <h1>
                     Demake
                 </h1>
@@ -226,8 +226,8 @@
                 <p>
                     A short story about a comic character tasked with killing the other adaptations of his character.
                 </p>
-            </a>
-            <a class="projectSlide" href="/projects/StarWatching.pdf">
+            </div>
+            <div class="pdfSlide">
                 <h1>
                     Star Watching
                 </h1>
@@ -248,12 +248,12 @@
                     across the room, curving inward to create the floor. My superior shows me my desk, covered in
                     buttons and screens, from which I'd create my battle plans.</div>
                 <p>
-                    A sci-fi romance short story about the commander Onyx and his forbidden love with a footsoldier
+                    A sci-fi romance short story about the commander Onyx and his forbidden love with a foot soldier
                     named
                     Dewen.
                 </p>
-            </a>
-            <a class="projectSlide" href="/projects/PaperTrail.pdf">
+            </div>
+            <div class="pdfSlide" href="https://ottop.me/projects/PaperTrail.pdf">
                 <h1>
                     Paper Trail
                 </h1>
@@ -282,7 +282,32 @@
                     town
                     entirely made of paper where something sinister awaits.
                 </p>
-            </a>
+            </div>
         </div>
-    </div>
+        <div class="clearfix"></div>
+        <div id="myModal" class="modal">
+            <span class="close">x</span>
+            <iframe class="modal-pdf" id="pdf01" title="PDF Reader">
+            </iframe>
+        </div>
+        <script>
+            const pdfLinks = ["https://ottop.me/projects/CreekWhatchaknow/CreekWatchaknow.pdf#toolbar=0&navpanes=0&scrollbar=0", "https://ottop.me/projects/Demake.pdf#toolbar=0&navpanes=0&scrollbar=0", "https://ottop.me/projects/StarWatching.pdf#toolbar=0&navpanes=0&scrollbar=0", "https://ottop.me/projects/PaperTrail.pdf#toolbar=0&navpanes=0&scrollbar=0"]
+            var modal = document.getElementById("myModal");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            var pdfs = document.getElementsByClassName("pdfSlide");
+            var modalFrame = document.getElementById("pdf01");
+            var i;
+            for (let i = 0; i < pdfs.length; i++) {
+                pdfs[i].addEventListener('click', function (event) {
+                    modal.style.display = "block";
+                    modalFrame.src = pdfLinks[i];
+                })
+            }
+        </script>
 </body>
